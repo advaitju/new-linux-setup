@@ -32,7 +32,7 @@ chsh -s /bin/zsh
 cd ~ && curl -o ~/dircolors.256dark https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark && cd -
 # zsh config
 echo "PS2='> '"						                    | tee -a ~/.bashrc ~/.zshrc
-echo "alias c='clear'"		                    | tee -a ~/.bashrc ~/.zshrc
+echo "alias c='clear && tput reset'"          | tee -a ~/.bashrc ~/.zshrc
 echo "alias lsa='ls -a'"	                    | tee -a ~/.bashrc ~/.zshrc
 echo "alias t='tmux'"			                    | tee -a ~/.bashrc ~/.zshrc
 echo "alias t0='tmux attach-session -t 0'"    | tee -a ~/.bashrc ~/.zshrc
