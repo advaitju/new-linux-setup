@@ -32,18 +32,29 @@ chsh -s /bin/zsh
 cd ~ && curl -o ~/dircolors.256dark https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark && cd -
 # zsh config
 echo "PS2='> '"						                    | tee -a ~/.bashrc ~/.zshrc
+
+echo "alias ..='cd ..'"                       | tee -a ~/.bashrc ~/.zshrc
+echo "alias ...='cd ../..'"                   | tee -a ~/.bashrc ~/.zshrc
+echo "alias ....='cd ../../..'"               | tee -a ~/.bashrc ~/.zshrc
+echo "alias .....='cd ../../../..'"           | tee -a ~/.bashrc ~/.zshrc
+
 echo "alias c='clear && tput reset'"          | tee -a ~/.bashrc ~/.zshrc
 echo "alias lsa='ls -a'"	                    | tee -a ~/.bashrc ~/.zshrc
+
 echo "alias t='tmux'"			                    | tee -a ~/.bashrc ~/.zshrc
 echo "alias t0='tmux attach-session -t 0'"    | tee -a ~/.bashrc ~/.zshrc
 echo "alias t1='tmux attach-session -t 1'"    | tee -a ~/.bashrc ~/.zshrc
 echo "alias t2='tmux attach-session -t 2'"    | tee -a ~/.bashrc ~/.zshrc
 echo "alias t3='tmux attach-session -t 3'"    | tee -a ~/.bashrc ~/.zshrc
 echo "alias t4='tmux attach-session -t 4'"    | tee -a ~/.bashrc ~/.zshrc
-echo "alias ..='cd ..'"                       | tee -a ~/.bashrc ~/.zshrc
-echo "alias ...='cd ../..'"                   | tee -a ~/.bashrc ~/.zshrc
-echo "alias ....='cd ../../..'"               | tee -a ~/.bashrc ~/.zshrc
-echo "alias .....='cd ../../../..'"           | tee -a ~/.bashrc ~/.zshrc
+echo "alias tls='tmux ls'"                    | tee -a ~/.bashrc ~/.zshrc
+
+echo "alias h='heroku'"                       | tee -a ~/.bashrc ~/.zshrc
+
+echo "alias ga='git add .'"                   | tee -a ~/.bashrc ~/.zshrc
+echo "alias gc='git commit -m '"              | tee -a ~/.bashrc ~/.zshrc
+echo "alias gp='git push'"                    | tee -a ~/.bashrc ~/.zshrc
+
 echo "eval \`dircolors ~/dircolors.256dark\`" | tee -a ~/.bashrc ~/.zshrc
 # Check if powerline-fonts for agnoster are installed correctly
 echo "\ue0b0 \u00b1 \ue0a0 \u27a6 \u2718 \u26a1 \u2699"
