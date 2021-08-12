@@ -51,6 +51,7 @@ echo "alias tls='tmux ls'"                    | tee -a ~/.bashrc ~/.zshrc
 
 echo "alias h='heroku'"                       | tee -a ~/.bashrc ~/.zshrc
 
+echo "alias gs='git status'"                  | tee -a ~/.bashrc ~/.zshrc
 echo "alias ga='git add .'"                   | tee -a ~/.bashrc ~/.zshrc
 echo "alias gc='git commit -m '"              | tee -a ~/.bashrc ~/.zshrc
 echo "alias gp='git push'"                    | tee -a ~/.bashrc ~/.zshrc
