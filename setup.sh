@@ -5,6 +5,8 @@ sudo apt upgrade
 
 # Install software/packages
 sudo apt install wget curl gcc git make xclip vim fonts-powerline zsh neovim tmux rename build-essential
+# Needed for PHP (phpenv/php-build installation)
+sudo apt install libxml2-dev libssl-dev libsqlite3-dev bzip2
 # VS Code
 sudo snap install code --classic
 
