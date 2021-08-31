@@ -3,7 +3,10 @@
 sudo apt update
 sudo apt upgrade
 
+# Install software/packages
 sudo apt install wget curl gcc git make xclip vim fonts-powerline zsh neovim tmux rename build-essential
+# VS Code
+sudo snap install code --classic
 
 
 # Set up Git
