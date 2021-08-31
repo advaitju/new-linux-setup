@@ -8,26 +8,6 @@ sudo apt install wget curl gcc git make xclip vim fonts-powerline zsh neovim tmu
 # VS Code
 sudo snap install code --classic
 
-# Install Composer (needs PHP first)
-sudo apt install software-properties-common
-sudo add-apt-repository ppa:ondrej/php
-sudo apt update
-sudo apt -y install php7.4
-# Install Composer - https://getcomposer.org/doc/faqs/how-to-install-composer-programmatically.md
-EXPECTED_CHECKSUM="$(php -r 'copy("https://composer.github.io/installer.sig", "php://stdout");')"
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-ACTUAL_CHECKSUM="$(php -r "echo hash_file('sha384', 'composer-setup.php');")"
-
-if [ "$EXPECTED_CHECKSUM" != "$ACTUAL_CHECKSUM" ]
-then
-  >&2 echo 'ERROR: Invalid installer checksum'
-else
-  php composer-setup.php --quiet
-  RESULT=$?
-  mv composer.phar /usr/local/bin/composer
-fi
-rm composer-setup.php
-
 # Set up Git
 git config --global core.eol lf           # Git changes line-endings to Linux when needed
 git config --global core.autocrlf input   # Automatically convert line-endings to Linux on commit
