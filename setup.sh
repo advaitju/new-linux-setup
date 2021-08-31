@@ -83,14 +83,23 @@ cd ~/.nodenv && src/configure && make -C src
 echo 'export PATH="$HOME/.nodenv/bin:$PATH"' | tee -a ~/.bashrc ~/.zshrc
 echo 'eval "$(nodenv init -)"' | tee -a ~/.bashrc ~/.zshrc
 
-# Close and all open terminals to load nodenv
+# Set up phpenv
+# Backup any existing copy first. Proceed only if it succeeds.
+sudo mv -i ~/.phpenv ~/.phpenv-backup && \
+git clone git://github.com/phpenv/phpenv.git ~/.phpenv
+echo 'export PATH="$HOME/.phpenv/bin:$PATH"' | tee -a ~/.bashrc ~/.zshrc
+echo 'eval "$(phpenv init -)"' | tee -a ~/.bashrc ~/.zshrc
+
+# Close and open all terminals to load nodenv and phpenv
 # to proceed past this point.
 
-# Install nodenv-build - to be able to install node versions
-mkdir -p "$(nodenv root)"/plugins
-git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
+# Install nodenv-build - to be able to install node versions using the 'nodenv install' command
+git clone https://github.com/nodenv/node-build.git $HOME/.nodenv/plugins/node-build
 # Test if nodenv is set up correctly
 curl -fsSL https://github.com/nodenv/nodenv-installer/raw/master/bin/nodenv-doctor | bash
+
+# Install phpenv-build - to be able to install php version using the 'phpenv install' command
+git clone git://github.com/php-build/php-build.git $HOME/.phpenv/plugins/php-build
 
 git clone git@github.com:advaitju/linux-tools.git ~
 sh ~/linux-tools/setup.sh
