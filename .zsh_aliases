@@ -33,10 +33,10 @@ g	'$G'
 gs	'$GS'
 ga	'$GA'
 gc	'$GC'
-gcf	git commit (fast) - '$GCF'
-gch	git commit (fast) to Heroku and default upstream - '$GCH'
+gcf	git commit: fast (message \"Commit\")
+gch	git commit: fast (message \"Commit\"), push Heroku + upstream
 gp	'$GP'
-gsf	git stash pull/push (safe) - '$GSF'
+gsf	git stash/pull/push/pop (safe)
 "'
 
 # Aliases
