@@ -9,7 +9,7 @@ GSF='git stash && git pull && git push && git stash pop'
 
 # List aliases
 alias al='echo "
-al     List all aliases
+al     List all aliases in file: ~/.zsh_aliases
 
 ..	Up 1
 ...	Up 2
