@@ -17,6 +17,18 @@ al     List all aliases in file: ~/.zsh_aliases
 .....	Up 4
 
 c	Clear
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+alias c='clear && tput reset'
+alias lsa=${LSA}
+
+alias t='tmux'
+alias t0='tmux attach-session -t 0'
+alias t1='tmux attach-session -t 1'
+alias t2='tmux attach-session -t 2'
+alias t3='tmux attach-session -t 3'
 lsa	List all files
 
 t	tmux
@@ -37,6 +49,8 @@ gcf	git commit: fast (message \"Commit\")
 gch	git commit: fast (message \"Commit\"), push Heroku + upstream
 gp	'$GP'
 gsf	git stash/pull/push/pop (safe)
+
+n npm
 "'
 
 # Aliases
@@ -66,3 +80,5 @@ alias gcf=$GCF
 alias gch=$GCH
 alias gp=$GP
 alias gsf=$GSF
+
+alias n='npm'
