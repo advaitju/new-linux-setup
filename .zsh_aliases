@@ -60,7 +60,7 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 alias c='clear && tput reset'
-alias lsa=${LSA}
+alias lsa='ls -a'
 
 alias t='tmux'
 alias t0='tmux attach-session -t 0'
