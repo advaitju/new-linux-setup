@@ -4,7 +4,7 @@ sudo apt update
 sudo apt upgrade
 
 # Install software/packages
-sudo apt install wget curl gcc git make xclip vim fonts-powerline zsh neovim tmux rename build-essential
+sudo apt install wget curl gcc git make xclip vim fonts-powerline zsh tmux rename build-essential
 # VS Code
 sudo snap install code --classic
 
@@ -12,17 +12,6 @@ sudo snap install code --classic
 git config --global core.eol lf           # Git changes line-endings to Linux when needed
 git config --global core.autocrlf input   # Automatically convert line-endings to Linux on commit
 git config --global init.defaultBranch main  # Set default 'git init' branch name to 'main'
-
-
-# Set up Neovim
-mkdir -p ~/.config/nvim
-mv ./init.vim ~/.config/nvim/init.vim
-# dein plugin manager
-curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer > installer.sh
-sh ./installer.sh ~/.cache/dein
-rm ./installer.sh
-# Install plugins
-nvim -c 'call dein#install()'
 
 
 # zsh setup
@@ -61,6 +50,12 @@ git clone https://github.com/nodenv/nodenv.git ~/.nodenv
 cd ~/.nodenv && src/configure && make -C src
 echo 'export PATH="$HOME/.nodenv/bin:$PATH"' | tee -a ~/.bashrc ~/.zshrc
 echo 'eval "$(nodenv init -)"' | tee -a ~/.bashrc ~/.zshrc
+# Reload shell to load nodenv
+source ~/.zshrc
+# Install nodenv-build - to be able to install node versions using the 'nodenv install' command
+git clone https://github.com/nodenv/node-build.git $HOME/.nodenv/plugins/node-build
+# Test if nodenv is set up correctly
+curl -fsSL https://github.com/nodenv/nodenv-installer/raw/master/bin/nodenv-doctor | bash
 
 # Set up phpenv
 # Backup any existing copy first. Proceed only if it succeeds.
@@ -68,17 +63,10 @@ echo 'eval "$(nodenv init -)"' | tee -a ~/.bashrc ~/.zshrc
 # git clone git://github.com/phpenv/phpenv.git ~/.phpenv
 # echo 'export PATH="$HOME/.phpenv/bin:$PATH"' | tee -a ~/.bashrc ~/.zshrc
 # echo 'eval "$(phpenv init -)"' | tee -a ~/.bashrc ~/.zshrc
-
-# Close and open all terminals to load nodenv and phpenv
-# to proceed past this point.
-
-# Install nodenv-build - to be able to install node versions using the 'nodenv install' command
-git clone https://github.com/nodenv/node-build.git $HOME/.nodenv/plugins/node-build
-# Test if nodenv is set up correctly
-curl -fsSL https://github.com/nodenv/nodenv-installer/raw/master/bin/nodenv-doctor | bash
-
+# Reload shell to load phpenv
+# source ~/.zshrc
 # Install phpenv-build - to be able to install php version using the 'phpenv install' command
-git clone git://github.com/php-build/php-build.git $HOME/.phpenv/plugins/php-build
+# git clone git://github.com/php-build/php-build.git $HOME/.phpenv/plugins/php-build
 
 git clone git@github.com:advaitju/linux-tools.git ~
 sh ~/linux-tools/setup.sh
@@ -91,10 +79,8 @@ sh ~/linux-tools/setup.sh
 ## ln -s ~/scripts/s /bin
 ## ln -s ~/scripts/take /bin
 
-
 ## Do manually
 ## Set ZSH_THEME="agnoster"
-
 
 ## Add github SSH keys
 # ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
