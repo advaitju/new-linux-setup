@@ -80,5 +80,8 @@ alias gcf=$GCF
 alias gch=$GCH
 alias gp=$GP
 alias gsf=$GSF
+# Set local git repo config to personal user.email and user.name
+## alias gcaj='git config user.email "email@web.com" && git config user.name "Name"'
+# alias gcXX= Set other user.email and user.name settings
 
 alias n='npm'
