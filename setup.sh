@@ -43,6 +43,17 @@ git clone https://github.com/tmux-plugins/tmux-sensible ~/.tmux/plugins/tmux-sen
 git clone https://github.com/tmux-plugins/tmux-resurrect ~/.tmux/plugins/tmux-resurrect
 
 
+# Hide username and machine name from CLI prompt
+echo '
+# Hide username and machine name from CLI prompt
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+    prompt_segment black default "%(!.%{%F{yellow}%}.)"
+  fi
+}
+' | tee -a ~/.bashrc ~/.zshrc
+
+
 # Set up nodenv
 # Backup any existing copy first. Proceed only if it succeeds.
 sudo mv -i ~/.nodenv ~/.nodenv-backup && \
