@@ -84,4 +84,6 @@ alias gsf=$GSF
 ## alias gcaj='git config user.email "email@web.com" && git config user.name "Name"'
 # alias gcXX= Set other user.email and user.name settings
 
+alias d='dotnet'
+
 alias n='npm'
