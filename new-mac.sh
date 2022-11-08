@@ -31,6 +31,7 @@ echo "alias tls='tmux ls'\n" | tee -a ~/.zsh_aliases
 
 # brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+source ~/.zshrc
 brew install wget tmux
 brew install --cask visual-studio-code
 
