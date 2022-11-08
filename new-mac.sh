@@ -47,3 +47,11 @@ git clone https://github.com/tmux-plugins/tmux-resurrect ~/.tmux/plugins/tmux-re
 echo "set -g mouse on"                                                 | tee -a ~/.tmux.conf
 echo "set -g @plugin 'tmux-plugins/tmux-sensible'"                     | tee -a ~/.tmux.conf
 echo "set -g @plugin 'tmux-plugins/tmux-resurrect'"                    | tee -a ~/.tmux.conf
+
+
+# nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+
+
+# Reload terminal
+source ~/.zshrc
