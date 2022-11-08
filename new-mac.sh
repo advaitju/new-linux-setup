@@ -52,6 +52,8 @@ echo "set -g @plugin 'tmux-plugins/tmux-resurrect'"                    | tee -a 
 
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+source ~/.zshrc
+nvm install node
 
 
 # Reload terminal
