@@ -13,6 +13,8 @@ echo "alias c='clear && tput reset'\n" | tee -a ~/.zsh_aliases
 
 echo "alias ga='git add .'" | tee -a ~/.zsh_aliases
 echo "alias gc='git commit -m'" | tee -a ~/.zsh_aliases
+echo "# Fast git commit" | tee -a ~/.zsh_aliases
+echo "alias gcf='git add . && git commit -m \"Commit\" && git push'" | tee -a ~/.zsh_aliases
 echo "# git config (work)" | tee -a ~/.zsh_aliases
 echo "alias gcfw='git config user.name \"Advait Junnarkar\" && git config user.email <email>'" | tee -a ~/.zsh_aliases
 echo "alias gp='git push'" | tee -a ~/.zsh_aliases
