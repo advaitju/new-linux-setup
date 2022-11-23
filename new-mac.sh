@@ -1,9 +1,10 @@
 #! /bin/bash
 
 # Git
-git config --global core.eol lf           # Git changes line-endings to Linux when needed
-git config --global core.autocrlf input   # Automatically convert line-endings to Linux on commit
+git config --global core.eol lf # Git changes line-endings to Linux when needed
+git config --global core.autocrlf input # Automatically convert line-endings to Linux on commit
 git config --global init.defaultBranch main  # Set default 'git init' branch name to 'main'
+git config --global --add --bool push.autoSetupRemote true
 
 
 # oh my zsh
