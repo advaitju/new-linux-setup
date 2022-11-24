@@ -29,8 +29,8 @@ echo "alias t0='tmux attach-session -t 0'"  | tee -a ~/.zsh_aliases
 echo "alias t1='tmux attach-session -t 1'" | tee -a ~/.zsh_aliases
 echo "alias t2='tmux attach-session -t 2'" | tee -a ~/.zsh_aliases
 echo "alias t3='tmux attach-session -t 3'" | tee -a ~/.zsh_aliases
-echo "alias tls='tmux ls'\n" | tee -a ~/.zsh_aliases
-
+echo "alias tls='tmux ls'" | tee -a ~/.zsh_aliases
+echo "alias tr='tmux rename-session -t'\n" | tee -a ~/.zsh_aliases
 
 # brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
