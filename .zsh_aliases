@@ -1,57 +1,9 @@
-G='git'
-GS='git status'
 GA='git add .'
 GC='git commit -m '
 GCF='git add . && git commit -m \"Commit\" && git push'
 GCH='git add . && git commit -m \"Commit\" && git push heroku main && git push'
 GP='git push'
 GSF='git stash && git pull && git push && git stash pop'
-
-# List aliases
-alias al='echo "
-al     List all aliases in file: ~/.zsh_aliases
-
-..	Up 1
-...	Up 2
-....	Up 3
-.....	Up 4
-
-c	Clear
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
-
-alias c='clear && tput reset'
-alias lsa='ls -a'
-
-alias t='tmux'
-alias t0='tmux attach-session -t 0'
-alias t1='tmux attach-session -t 1'
-alias t2='tmux attach-session -t 2'
-alias t3='tmux attach-session -t 3'
-lsa	List all files
-
-t	tmux
-t0	tmux attach-session 0
-t1	tmux attach-session 1
-t2	tmux attach-session 2
-t3	tmux attach-session 3
-t4	tmux attach-session 4
-tls	tmux - List sessions
-
-h	Run Heroku CLI
-
-g	'$G'
-gs	'$GS'
-ga	'$GA'
-gc	'$GC'
-gcf	git commit: fast (message \"Commit\")
-gch	git commit: fast (message \"Commit\"), push Heroku + upstream
-gp	'$GP'
-gsf	git stash/pull/push/pop (safe)
-
-n npm
-"'
 
 # Aliases
 alias ..='cd ..'
@@ -72,8 +24,8 @@ alias tls='tmux ls'
 
 alias h='heroku'
 
-alias g=$G
-alias gs=$GS
+alias g='git'
+alias gs='git status'
 alias ga=$GA
 alias gc=$GC
 alias gcf=$GCF
