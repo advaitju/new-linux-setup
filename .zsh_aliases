@@ -1,11 +1,3 @@
-GA='git add .'
-GC='git commit -m '
-GCF='git add . && git commit -m \"Commit\" && git push'
-GCH='git add . && git commit -m \"Commit\" && git push heroku main && git push'
-GP='git push'
-GSF='git stash && git pull && git push && git stash pop'
-
-# Aliases
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -22,16 +14,14 @@ alias t3='tmux attach-session -t 3'
 alias t4='tmux attach-session -t 4'
 alias tls='tmux ls'
 
-alias h='heroku'
-
 alias g='git'
 alias gs='git status'
-alias ga=$GA
-alias gc=$GC
-alias gcf=$GCF
-alias gch=$GCH
-alias gp=$GP
-alias gsf=$GSF
+alias ga='git add .'
+alias gc='git commit -m '
+alias gcf='git add . && git commit -m \"Commit\" && git push'
+alias gch='git checkout'
+alias gp='git push'
+alias gsf='git stash && git pull && git push && git stash pop'
 # Set local git repo config to personal user.email and user.name
 ## alias gcaj='git config user.email "email@web.com" && git config user.name "Name"'
 # alias gcXX= Set other user.email and user.name settings
