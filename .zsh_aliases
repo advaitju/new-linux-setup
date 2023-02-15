@@ -20,6 +20,7 @@ alias ga='git add .'
 alias gc='git commit -m '
 alias gcf='git add . && git commit -m \"Commit\" && git push'
 alias gch='git checkout'
+alias gl='git log'
 alias gp='git push'
 alias gsf='git stash && git pull && git push && git stash pop'
 # Set local git repo config to personal user.email and user.name
