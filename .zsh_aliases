@@ -13,6 +13,7 @@ alias t2='tmux attach-session -t 2'
 alias t3='tmux attach-session -t 3'
 alias t4='tmux attach-session -t 4'
 alias tls='tmux ls'
+alias tr='tmux rename-session -t'
 
 alias g='git'
 alias gs='git status'
@@ -24,6 +25,7 @@ alias gl='git log'
 alias gps='git push'
 alias gpl='git pull'
 alias gsf='git stash && git pull && git push && git stash pop'
+
 # Set local git repo config to personal user.email and user.name
 ## alias gcfp='git config user.email "email@web.com" && git config user.name "Name"'
 # alias gcfX= Set other user.email and user.name settings
