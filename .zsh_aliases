@@ -25,8 +25,8 @@ alias gps='git push'
 alias gpl='git pull'
 alias gsf='git stash && git pull && git push && git stash pop'
 # Set local git repo config to personal user.email and user.name
-## alias gcaj='git config user.email "email@web.com" && git config user.name "Name"'
-# alias gcXX= Set other user.email and user.name settings
+## alias gcfp='git config user.email "email@web.com" && git config user.name "Name"'
+# alias gcfX= Set other user.email and user.name settings
 
 alias d='dotnet'
 
