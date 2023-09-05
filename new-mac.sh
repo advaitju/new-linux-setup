@@ -34,6 +34,8 @@ echo "alias tr='tmux rename-session -t'\n" | tee -a ~/.zsh_aliases
 
 # brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/advait/.zprofile # Add brew to PATH
+eval "$(/opt/homebrew/bin/brew shellenv)"
 source ~/.zshrc
 brew install wget tmux
 brew install --cask visual-studio-code
