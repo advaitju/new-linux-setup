@@ -10,31 +10,31 @@ git config --global --add --bool push.autoSetupRemote true
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-echo "alias c='clear && tput reset'" | tee -a ~/.zsh_aliases
-echo | tee -a ~/.zsh_aliases
+echo "alias c='clear && tput reset'" | tee -a ~/.zshrc
+echo | tee -a ~/.zshrc
 
-echo "alias ga='git add .'" | tee -a ~/.zsh_aliases
-echo "alias gc='git commit -m'" | tee -a ~/.zsh_aliases
-echo "# Fast git commit" | tee -a ~/.zsh_aliases
-echo "alias gcf='git add . && git commit -m \"Commit\" && git push'" | tee -a ~/.zsh_aliases
-echo "# git config (work)" | tee -a ~/.zsh_aliases
-echo "alias gcfw='git config user.name \"Advait Junnarkar\" && git config user.email <email>'" | tee -a ~/.zsh_aliases
-echo "alias gp='git push'" | tee -a ~/.zsh_aliases
-echo "alias gs='git status'" | tee -a ~/.zsh_aliases
-echo "alias gsp='git stash && git pull && git push && git stash pop'" | tee -a ~/.zsh_aliases
+echo "alias ga='git add .'"                    | tee -a ~/.zshrc
+echo "alias gc='git commit -m'"                | tee -a ~/.zshrc
+echo "# Fast git commit"                       | tee -a ~/.zshrc
+echo "alias gcf='git add . && git commit -m \"Commit\" && git push'" | tee -a ~/.zshrc
+echo "# git config (work)"                     | tee -a ~/.zshrc
+echo "alias gcfw='git config user.name \"Advait Junnarkar\" && git config user.email <email>'" | tee -a ~/.zshrc
+echo "alias gp='git push'"                     | tee -a ~/.zshrc
+echo "alias gs='git status'"                   | tee -a ~/.zshrc
+echo "alias gsp='git stash && git pull && git push && git stash pop'" | tee -a ~/.zshrc
 
-echo "alias lsa='ls -a'" | tee -a ~/.zsh_aliases
-echo | tee -a ~/.zsh_aliases
+echo "alias lsa='ls -a'"                       | tee -a ~/.zshrc
+echo                                           | tee -a ~/.zshrc
 
-echo "alias t='tmux'"                          | tee -a ~/.zsh_aliases
-echo "alias t0='tmux attach-session -t 0'"     | tee -a ~/.zsh_aliases
-echo "alias t1='tmux attach-session -t 1'"     | tee -a ~/.zsh_aliases
-echo "alias t2='tmux attach-session -t 2'"     | tee -a ~/.zsh_aliases
-echo "alias t3='tmux attach-session -t 3'"     | tee -a ~/.zsh_aliases
-echo "alias tls='tmux ls'"                     | tee -a ~/.zsh_aliases
-echo "alias tr='tmux rename-session -t'\n"     | tee -a ~/.zsh_aliases
-
-echo "source ~/.zsh_aliases"                   | tee -a ~/.zshrc
+echo "alias t='tmux'"                          | tee -a ~/.zshrc
+echo "alias t0='tmux attach-session -t 0'"     | tee -a ~/.zshrc
+echo "alias t1='tmux attach-session -t 1'"     | tee -a ~/.zshrc
+echo "alias t2='tmux attach-session -t 2'"     | tee -a ~/.zshrc
+echo "alias t3='tmux attach-session -t 3'"     | tee -a ~/.zshrc
+echo "alias tls='tmux ls'"                     | tee -a ~/.zshrc
+echo "alias tr='tmux rename-session -t'\n"     | tee -a ~/.zshrc
+echo                                           | tee -a ~/.zshrc
+echo                                           | tee -a ~/.zshrc
 
 # brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
