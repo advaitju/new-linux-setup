@@ -34,6 +34,8 @@ echo "alias t3='tmux attach-session -t 3'"     | tee -a ~/.zshrc
 echo "alias tls='tmux ls'"                     | tee -a ~/.zshrc
 echo "alias tr='tmux rename-session -t'\n"     | tee -a ~/.zshrc
 echo                                           | tee -a ~/.zshrc
+
+echo "alias n='npm'"                           | tee -a ~/.zshrc
 echo                                           | tee -a ~/.zshrc
 
 # brew
