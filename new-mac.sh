@@ -11,6 +11,7 @@ git config --global --add --bool push.autoSetupRemote true
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "alias c='clear && tput reset'" | tee -a ~/.zshrc
+echo "alias rm='rm -rf'"             | tee -a ~/.zshrc
 echo | tee -a ~/.zshrc
 
 echo "alias ga='git add .'"                    | tee -a ~/.zshrc
@@ -36,7 +37,7 @@ echo "alias tr='tmux rename-session -t'\n"     | tee -a ~/.zshrc
 echo                                           | tee -a ~/.zshrc
 
 echo "alias n='npm'"                           | tee -a ~/.zshrc
-echo                                           | tee -a ~/.zshrc
+echo | tee -a ~/.zshrc
 
 # brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
