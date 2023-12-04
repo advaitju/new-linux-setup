@@ -1,0 +1,11 @@
+YouTube
+y
+https://youtube.com/results?search_query=%s
+
+Images
+i
+https://www.google.com/search?tbm=isch&q=%s
+
+Thesaurus
+t
+https://www.thesaurus.com/browse/%s
