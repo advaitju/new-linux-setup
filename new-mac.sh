@@ -12,11 +12,6 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 $SHELL_CONFIG_FILE=~/.zshrc
 
-echo "alias ..='cd ..'" | tee -a $SHELL_CONFIG_FILE
-echo "alias ...='cd ../..'" | tee -a $SHELL_CONFIG_FILE
-echo "alias ....='cd ../../..'" | tee -a $SHELL_CONFIG_FILE
-echo "alias .....='cd ../../../..'" | tee -a $SHELL_CONFIG_FILE
-
 echo "alias c='clear && tput reset'" | tee -a ~/.zshrc
 echo "alias rm='rm -rf'"             | tee -a ~/.zshrc
 echo | tee -a ~/.zshrc
@@ -46,6 +41,14 @@ echo                                           | tee -a ~/.zshrc
 echo "alias n='npm'"                           | tee -a ~/.zshrc
 echo | tee -a ~/.zshrc
 
+
+echo "alias ..='cd ..'" | tee -a $SHELL_CONFIG_FILE
+echo "alias ...='cd ../..'" | tee -a $SHELL_CONFIG_FILE
+echo "alias ....='cd ../../..'" | tee -a $SHELL_CONFIG_FILE
+echo "alias .....='cd ../../../..'" | tee -a $SHELL_CONFIG_FILE
+echo | tee -a ~/.zshrc
+
+
 # brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/advait/.zprofile # Add brew to PATH
@@ -53,6 +56,12 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 source ~/.zshrc
 brew install wget tmux
 brew install --cask visual-studio-code
+
+
+# nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+source ~/.zshrc
+nvm install node
 
 
 # tmux
@@ -69,12 +78,6 @@ echo                                                   | tee -a ~/.tmux.conf
 echo "set -g mouse on"                                 | tee -a ~/.tmux.conf
 echo "set -g @plugin 'tmux-plugins/tmux-sensible'"     | tee -a ~/.tmux.conf
 echo "set -g @plugin 'tmux-plugins/tmux-resurrect'"    | tee -a ~/.tmux.conf
-
-
-# nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
-source ~/.zshrc
-nvm install node
 
 
 # Reload terminal
