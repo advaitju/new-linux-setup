@@ -54,7 +54,8 @@ echo | tee -a ~/.zshrc
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/advait/.zprofile # Add brew to PATH
 eval "$(/opt/homebrew/bin/brew shellenv)"
 source ~/.zshrc
-brew install wget tmux
+
+brew install wget tmux gh
 brew install --cask visual-studio-code
 
 
