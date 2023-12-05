@@ -6,6 +6,8 @@ git config --global core.autocrlf input # Automatically convert line-endings to 
 git config --global init.defaultBranch main  # Set default 'git init' branch name to 'main'
 git config --global --add --bool push.autoSetupRemote true
 
+# Directories
+mkdir ~/d ~/w
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -47,7 +49,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 source ~/.zshrc
 
 brew install wget tmux gh
-brew install --cask visual-studio-code
+brew install --cask visual-studio-code iterm2
 gh auth login
 
 # nvm
