@@ -29,15 +29,6 @@ echo "alias gsp='git stash && git pull && git push && git stash pop'" | tee -a ~
 echo "alias lsa='ls -a'"                       | tee -a ~/.zshrc
 echo                                           | tee -a ~/.zshrc
 
-echo "alias t='tmux'"                          | tee -a ~/.zshrc
-echo "alias t0='tmux attach-session -t 0'"     | tee -a ~/.zshrc
-echo "alias t1='tmux attach-session -t 1'"     | tee -a ~/.zshrc
-echo "alias t2='tmux attach-session -t 2'"     | tee -a ~/.zshrc
-echo "alias t3='tmux attach-session -t 3'"     | tee -a ~/.zshrc
-echo "alias tls='tmux ls'"                     | tee -a ~/.zshrc
-echo "alias tr='tmux rename-session -t'\n"     | tee -a ~/.zshrc
-echo                                           | tee -a ~/.zshrc
-
 echo "alias n='npm'"                           | tee -a ~/.zshrc
 echo | tee -a ~/.zshrc
 
@@ -57,7 +48,7 @@ source ~/.zshrc
 
 brew install wget tmux gh
 brew install --cask visual-studio-code
-
+gh auth login
 
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
@@ -80,6 +71,12 @@ echo "set -g mouse on"                                 | tee -a ~/.tmux.conf
 echo "set -g @plugin 'tmux-plugins/tmux-sensible'"     | tee -a ~/.tmux.conf
 echo "set -g @plugin 'tmux-plugins/tmux-resurrect'"    | tee -a ~/.tmux.conf
 
+echo "alias t='tmux'"                          | tee -a ~/.zshrc
+echo "alias t0='tmux attach-session -t 0'"     | tee -a ~/.zshrc
+echo "alias t1='tmux attach-session -t 1'"     | tee -a ~/.zshrc
+echo "alias t2='tmux attach-session -t 2'"     | tee -a ~/.zshrc
+echo "alias t3='tmux attach-session -t 3'"     | tee -a ~/.zshrc
+echo "alias tls='tmux ls'"                     | tee -a ~/.zshrc
+echo "alias tr='tmux rename-session -t'\n"     | tee -a ~/.zshrc
 
-# Reload terminal
 source ~/.zshrc
