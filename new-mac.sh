@@ -49,7 +49,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 source ~/.zshrc
 
 brew install wget tmux gh
-brew install --cask visual-studio-code iterm2
+brew install --cask visual-studio-code docker
 gh auth login
 
 # nvm
