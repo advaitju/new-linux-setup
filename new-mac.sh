@@ -31,7 +31,7 @@ echo "alias gcfw='git config user.name \"Advait Junnarkar\" && git config user.e
 echo | tee -a ~/.zshrc
 
 echo "alias gl='git log'"                      | tee -a ~/.zshrc
-echo "alias gp='git push'"                     | tee -a ~/.zshrc
+echo "alias gps='git push'"                     | tee -a ~/.zshrc
 echo "alias gpl='git pull'"                    | tee -a ~/.zshrc
 echo "alias gs='git status'"                   | tee -a ~/.zshrc
 echo "alias gsp='git stash && git pull && git push && git stash pop'" | tee -a ~/.zshrc
