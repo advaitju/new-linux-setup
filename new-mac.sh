@@ -12,6 +12,8 @@ mkdir ~/d ~/w
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+echo | tee -a ~/.zshrc
+echo | tee -a ~/.zshrc
 echo "alias c='clear && tput reset'" | tee -a ~/.zshrc
 echo "alias rm='rm -rf'"             | tee -a ~/.zshrc
 echo | tee -a ~/.zshrc
