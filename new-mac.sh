@@ -55,7 +55,7 @@ brew install --cask visual-studio-code docker
 gh auth login
 
 # nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 source ~/.zshrc
 nvm install node
 
