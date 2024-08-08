@@ -50,7 +50,7 @@ echo | tee -a ~/.zshrc
 eval "$(/opt/homebrew/bin/brew shellenv)"
 source ~/.zshrc
 
-brew install wget tmux gh
+brew install wget gh
 brew install --cask visual-studio-code docker
 gh auth login
 
@@ -61,6 +61,8 @@ nvm install node
 
 
 # tmux
+brew install tmux
+# OR - TMUX MANUAL INSTALL
 git clone https://github.com/gpakosz/.tmux.git ~/.tmux
 cp ~/.tmux/.tmux.conf ~
 rm -rf ~/.tmux
@@ -69,6 +71,7 @@ mkdir -p ~/.tmux/plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 git clone https://github.com/tmux-plugins/tmux-sensible ~/.tmux/plugins/tmux-sensible
 git clone https://github.com/tmux-plugins/tmux-resurrect ~/.tmux/plugins/tmux-resurrect
+# TMUX MANUAL INSTALL
 
 echo                                                   | tee -a ~/.tmux.conf
 echo "set -g mouse on"                                 | tee -a ~/.tmux.conf
