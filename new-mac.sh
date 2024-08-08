@@ -12,8 +12,6 @@ mkdir ~/d ~/w
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-$SHELL_CONFIG_FILE=~/.zshrc
-
 echo "alias c='clear && tput reset'" | tee -a ~/.zshrc
 echo "alias rm='rm -rf'"             | tee -a ~/.zshrc
 echo | tee -a ~/.zshrc
@@ -41,13 +39,6 @@ echo "alias lsa='ls -a'"                       | tee -a ~/.zshrc
 echo | tee -a ~/.zshrc
 
 echo "alias n='npm'"                           | tee -a ~/.zshrc
-echo | tee -a ~/.zshrc
-
-
-echo "alias ..='cd ..'" | tee -a $SHELL_CONFIG_FILE
-echo "alias ...='cd ../..'" | tee -a $SHELL_CONFIG_FILE
-echo "alias ....='cd ../../..'" | tee -a $SHELL_CONFIG_FILE
-echo "alias .....='cd ../../../..'" | tee -a $SHELL_CONFIG_FILE
 echo | tee -a ~/.zshrc
 
 
