@@ -1,7 +1,5 @@
 #! /bin/bash
 
-https://codeium.com/windsurf/download
-
 # Git
 git config --global core.eol lf # Git changes line-endings to Linux when needed
 git config --global core.autocrlf input # Automatically convert line-endings to Linux on commit
@@ -53,9 +51,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 source ~/.zshrc
 
 brew install --cask visual-studio-code docker
+brew install --cask --no-quarantine middleclick
 # brew - Work
-brew install --cask slack
-
 # brew - Personal
 brew install wget
 brew install gh && gh auth login
