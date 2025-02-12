@@ -7,6 +7,7 @@ sh setup.sh
 VS Code: https://code.visualstudio.com/Download  
 Windsurf: https://codeium.com/windsurf/download  
 Docker: https://docs.docker.com/desktop/setup/install/mac-install/  
+AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html  
 
 **Work**
 
