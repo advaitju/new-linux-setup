@@ -55,7 +55,7 @@ echo "alias windsurf='open -a Windsurf'"        | tee -a ~/.zshrc
 eval "$(/opt/homebrew/bin/brew shellenv)"
 source ~/.zshrc
 
-brew install neovim wget curl
+brew install neovim wget curl awscli
 brew install --cask iterm2
 brew install --cask --no-quarantine middleclick
 # brew - Work
