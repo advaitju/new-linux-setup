@@ -1,5 +1,7 @@
 #! /bin/bash
 
+https://codeium.com/windsurf/download
+
 # Git
 git config --global core.eol lf # Git changes line-endings to Linux when needed
 git config --global core.autocrlf input # Automatically convert line-endings to Linux on commit
@@ -50,9 +52,14 @@ echo | tee -a ~/.zshrc
 eval "$(/opt/homebrew/bin/brew shellenv)"
 source ~/.zshrc
 
-brew install wget gh
 brew install --cask visual-studio-code docker
-gh auth login
+# brew - Work
+brew install --cask slack
+
+# brew - Personal
+brew install wget
+brew install gh && gh auth login
+
 
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
