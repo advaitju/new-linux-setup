@@ -6,6 +6,7 @@ sh setup.sh
 ## Download
 VS Code: https://code.visualstudio.com/Download  
 Windsurf: https://codeium.com/windsurf/download  
+Docker: https://docs.docker.com/desktop/setup/install/mac-install/  
 
 **Work**
 
