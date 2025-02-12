@@ -5,6 +5,9 @@ git config --global core.eol lf # Git changes line-endings to Linux when needed
 git config --global core.autocrlf input # Automatically convert line-endings to Linux on commit
 git config --global init.defaultBranch main  # Set default 'git init' branch name to 'main'
 git config --global --add --bool push.autoSetupRemote true
+git config --global user.name "Advait Junnarkar"
+
+git config --global user.email 
 
 # Directories
 mkdir ~/d ~/w
@@ -50,11 +53,12 @@ echo | tee -a ~/.zshrc
 eval "$(/opt/homebrew/bin/brew shellenv)"
 source ~/.zshrc
 
-brew install --cask visual-studio-code docker
+brew install neovim wget curl
+brew install --cask iterm2
+brew install --cask docker
 brew install --cask --no-quarantine middleclick
 # brew - Work
 # brew - Personal
-brew install wget
 brew install gh && gh auth login
 
 
