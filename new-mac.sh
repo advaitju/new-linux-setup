@@ -55,7 +55,6 @@ source ~/.zshrc
 
 brew install neovim wget curl
 brew install --cask iterm2
-brew install --cask docker
 brew install --cask --no-quarantine middleclick
 # brew - Work
 # brew - Personal
