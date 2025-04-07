@@ -40,6 +40,8 @@ echo "alias gs='git status'"                   | tee -a ~/.zshrc
 echo "alias gsp='git stash && git pull && git push && git stash pop'" | tee -a ~/.zshrc
 echo "alias gch='git checkout'"                | tee -a ~/.zshrc
 
+echo "alias gdev='git checkout development && git pull && git checkout - && git merge development'"    | tee -a ~/.zshrc
+
 echo "alias lsa='ls -a'"                       | tee -a ~/.zshrc
 echo | tee -a ~/.zshrc
 
